@@ -1,0 +1,24 @@
+name: 'osrs_profile'
+version: '1.0.0'
+config-version: 2
+
+profile: 'osrs_profile' 
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  osrs_profile:
+    staging:
+      +materialized: view 
+    marts:
+      +materialized: table 

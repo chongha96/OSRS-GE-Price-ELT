@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ge_tracker
+    database: "prices-database"
+    schema: dev
+    tables:
+      - name: prices
+        description: "Raw price snapshots"
+      
+      - name: rs_item_details
+        description: "Raw item metadata"

@@ -1,0 +1,17 @@
+# Local Environment & Secrets
+.env
+.dbt/
+logs/
+target/
+dbt_packages/
+venv/
+__pycache__/
+postgres/data/
+*.log
+package-lock.yml
+
+
+# Airflow specifics
+airflow/logs/
+airflow/plugins/
+airflow/standalone_admin_password.txt
