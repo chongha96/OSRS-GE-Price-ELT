@@ -9,7 +9,7 @@ __pycache__/
 postgres/data/
 *.log
 package-lock.yml
-
+postgres/
 
 # Airflow specifics
 airflow/logs/
